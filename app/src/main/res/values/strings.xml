@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WebRTC Android Firebase</string>
+
+    <string name="status_unknown">Unknown</string>
+    <string name="status_connecting">Connecting …</string>
+    <string name="status_connected">Connected!</string>
+    <string name="status_matching">Matching …</string>
+    <string name="status_failed">Failed</string>
+    <string name="start">Start</string>
+    <string name="status_finished">Finished</string>
+    <string name="status_dialing">Dialing</string>
+
+    <!-- Auth UI -->
+    <string name="unknown_response">Unexpected onActivityResult response code</string>
+    <string name="unknown_sign_in_response">Unknown response from AuthUI sign-in</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">An unknown error occurred</string>
+    <string name="contact_list">Contacts list</string>
+</resources>

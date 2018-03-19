@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorUnknown">#565656</color>
+    <color name="colorConnecting">#565656</color>
+    <color name="colorMatching">#4094CC</color>
+    <color name="colorFailed">#ED3437</color>
+    <color name="colorConnected">#40b633</color>
+
+    <color name="palette_red">#FB1F05</color>
+    <color name="palette_green">#657725</color>
+
+    <color name="colorPrimaryAlpha">#663F51B5</color>
+
+    <color name="semi_white">#66FFFFFF</color>
+
+</resources>
