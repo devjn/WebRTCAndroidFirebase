@@ -152,8 +152,7 @@ class VideoCallSession(
 
     private fun init() {
         val iceServers = arrayListOf(
-                PeerConnection.IceServer.builder("stun:stun.l.google.com:19302").createIceServer(),
-                PeerConnection.IceServer.builder("stun:stun.services.mozilla.com").createIceServer()
+                PeerConnection.IceServer.builder("stun:stun.l.google.com:19302").createIceServer()
         )
 
         createPeerConnection(iceServers)
@@ -394,37 +393,6 @@ class VideoCallSession(
     private fun useCamera2(): Boolean {
         return Camera2Enumerator.isSupported(context)
     }
-
-/*    private fun createVideoCapturer(): VideoCapturer? {
-        val videoCapturer: VideoCapturer?
-        val videoFileAsCamera = getIntent().getStringExtra(EXTRA_VIDEO_FILE_AS_CAMERA)
-        if (videoFileAsCamera != null) {
-            try {
-                videoCapturer = FileVideoCapturer(videoFileAsCamera)
-            } catch (e: IOException) {
-                reportError("Failed to open video file for emulated camera")
-                return null
-            }
-
-        } else if (screencaptureEnabled) {
-            return createScreenCapturer()
-        } else if (useCamera2()) {
-            if (!captureToTexture()) {
-                reportError(getString(R.string.camera2_texture_only_error))
-                return null
-            }
-            Logging.d(TAG, "Creating capturer using camera2 API.")
-            videoCapturer = createFrontCameraCapturer(Camera2Enumerator(this))
-        } else {
-            Logging.d(TAG, "Creating capturer using camera1 API.")
-            videoCapturer = createFrontCameraCapturer(Camera1Enumerator(captureToTexture()))
-        }
-        if (videoCapturer == null) {
-            reportError("Failed to open camera")
-            return null
-        }
-        return videoCapturer
-    }*/
 
     companion object {
 
